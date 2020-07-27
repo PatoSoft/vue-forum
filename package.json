@@ -2,7 +2,7 @@
   "name": "vue-forum",
   "version": "0.0.1",
   "description": "Full featured forum made with Vue.js",
-  "author": "Jose Luis Martínez Ortiz <maorjl@gmail.com>",
+  "author": "Jose Luis Martinez Ortiz <maorjl@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -13,7 +13,8 @@
   "dependencies": {
     "moment": "^2.27.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
