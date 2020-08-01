@@ -41,26 +41,27 @@
         Edit Profile
       </router-link>
     </div>
+
   </div>
 </template>
 
 <script>
-  export default {
-    props: {
-      user: {
-        required: true,
-        type: Object
-      },
-      userPostsCount: {
-        required: true,
-        type: Number
-      },
-      userThreadsCount: {
-        required: true,
-        type: Number
+    export default {
+      props: {
+        user: {
+          required: true,
+          type: Object
+        },
+        userPostsCount: {
+          required: true,
+          type: Number
+        },
+        userThreadsCount: {
+          required: true,
+          type: Number
+        }
       }
     }
-  }
 </script>
 
 <style scoped>

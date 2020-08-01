@@ -52,39 +52,39 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      user: {
-        required: true,
-        type: Object
-      },
-      userPostsCount: {
-        required: true,
-        type: Number
-      },
-      userThreadsCount: {
-        required: true,
-        type: Number
-      }
-    },
-
-    data () {
-      return {
-        activeUser: {...this.user}
-      }
-    },
-
-    methods: {
-      save () {
-        this.$store.dispatch('updateUser', {...this.activeUser})
-        this.$router.push({name: 'Profile'})
+    export default {
+      props: {
+        user: {
+          required: true,
+          type: Object
+        },
+        userPostsCount: {
+          required: true,
+          type: Number
+        },
+        userThreadsCount: {
+          required: true,
+          type: Number
+        }
       },
 
-      cancel () {
-        this.$router.push({name: 'Profile'})
+      data () {
+        return {
+          activeUser: {...this.user}
+        }
+      },
+
+      methods: {
+        save () {
+          this.$store.dispatch('updateUser', {...this.activeUser})
+          this.$router.push({name: 'Profile'})
+        },
+
+        cancel () {
+          this.$router.push({name: 'Profile'})
+        }
       }
     }
-  }
 </script>
 
 <style scoped>

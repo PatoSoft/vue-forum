@@ -9,7 +9,6 @@
 
 <script>
   import TheNavbar from '@/components/TheNavbar'
-
   export default {
     components: {
       TheNavbar
@@ -18,5 +17,5 @@
 </script>
 
 <style>
-  @import "assets/css/style.css";
+@import "assets/css/style.css";
 </style>
