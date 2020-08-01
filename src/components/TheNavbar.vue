@@ -19,23 +19,23 @@
     <nav class="navbar">
       <ul>
         <!--<li class="navbar-item">-->
-        <!--<a href="index.html">Home</a>-->
+          <!--<a href="index.html">Home</a>-->
         <!--</li>-->
         <!--<li class="navbar-item">-->
-        <!--<a href="category.html">Category</a>-->
+          <!--<a href="category.html">Category</a>-->
         <!--</li>-->
         <!--<li class="navbar-item">-->
-        <!--<a href="forum.html">Forum</a>-->
+          <!--<a href="forum.html">Forum</a>-->
         <!--</li>-->
         <!--<li class="navbar-item">-->
-        <!--<a href="thread.html">Thread</a>-->
+          <!--<a href="thread.html">Thread</a>-->
         <!--</li>-->
         <!--&lt;!&ndash; Show these option only on mobile&ndash;&gt;-->
         <!--<li class="navbar-item mobile-only">-->
-        <!--<a href="profile.html">My Profile</a>-->
+          <!--<a href="profile.html">My Profile</a>-->
         <!--</li>-->
         <!--<li class="navbar-item mobile-only">-->
-        <!--<a href="#">Logout</a>-->
+          <!--<a href="#">Logout</a>-->
         <!--</li>-->
 
         <li class="navbar-user">
@@ -67,7 +67,7 @@
   export default {
     computed: {
       ...mapGetters({
-        user: 'authUser'
+        'user': 'authUser'
       })
     }
   }

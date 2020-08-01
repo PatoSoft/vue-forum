@@ -9,19 +9,19 @@
 </template>
 
 <script>
-  import CategoryListItem from './CategoryListItem'
+    import CategoryListItem from './CategoryListItem'
+    export default {
+      components: {
+        CategoryListItem
+      },
 
-  export default {
-    components: {
-      CategoryListItem
-    },
-    props: {
-      categories: {
-        required: true,
-        type: Array
+      props: {
+        categories: {
+          required: true,
+          type: Array
+        }
       }
     }
-  }
 </script>
 
 <style scoped>

@@ -11,7 +11,10 @@
 <script>
     import PostListItem from './PostListItem'
     export default {
-      components: {PostListItem},
+      components: {
+        PostListItem
+      },
+
       props: {
         posts: {
           required: true,

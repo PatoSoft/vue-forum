@@ -7,7 +7,6 @@
       >
         {{forum.name}}
       </router-link>
-
       <p>{{forum.description}}</p>
     </div>
 
@@ -23,22 +22,22 @@
 </template>
 
 <script>
-  import {countObjectProperties} from '@/utils'
+    import {countObjectProperties} from '@/utils'
 
-  export default {
-    props: {
-      forum: {
-        required: true,
-        type: Object
-      }
-    },
+    export default {
+      props: {
+        forum: {
+          required: true,
+          type: Object
+        }
+      },
 
-    computed: {
-      threadsCount () {
-        return countObjectProperties(this.forum.threads)
+      computed: {
+        threadsCount () {
+          return countObjectProperties(this.forum.threads)
+        }
       }
     }
-  }
 </script>
 
 <style scoped>
