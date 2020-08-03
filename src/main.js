@@ -11,21 +11,16 @@ Vue.component('AppDate', AppDate)
 
 Vue.config.productionTip = false
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: 'AIzaSyA1XHFq49GI00zhuyFFLDjCbq0SQAVelpI',
-  authDomain: 'vue-forum-e677c.firebaseapp.com',
-  databaseURL: 'https://vue-forum-e677c.firebaseio.com',
-  projectId: 'vue-forum-e677c',
-  storageBucket: 'vue-forum-e677c.appspot.com',
-  messagingSenderId: '376054174586',
-  appId: '1:376054174586:web:0c454aad7a6ce06df9bcc3',
-  measurementId: 'G-8YTK3Y1Y8P'
-}
-
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
-firebase.analytics()
+const config = {
+  apiKey: 'AIzaSyC_WLhTuqbKU3unweXosx8zsKQccBOKs7c',
+  authDomain: 'vue-school-forum.firebaseapp.com',
+  databaseURL: 'https://vue-school-forum.firebaseio.com',
+  projectId: 'vue-school-forum',
+  storageBucket: 'vue-school-forum.appspot.com',
+  messagingSenderId: '426987850952'
+}
+firebase.initializeApp(config)
 
 /* eslint-disable no-new */
 new Vue({
