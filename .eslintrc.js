@@ -12,9 +12,9 @@ module.exports = {
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: 'standard',
   // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
+  // plugins: [
+  //   'html'
+  // ],
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions
