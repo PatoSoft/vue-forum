@@ -64,19 +64,21 @@
     },
 
     created () {
-      // Fetch thread
-      this.$store.dispatch('fetchThread', {id: this.id}).then(thread => {
-        // Fetch user
-        this.$store.dispatch('fetchUser', {id: thread.userId})
+      // fetch thread
+      this.$store.dispatch('fetchThread', {id: this.id})
+        .then(thread => {
+          // fetch user
+          this.$store.dispatch('fetchUser', {id: thread.userId})
 
-        Object.keys(thread.posts).forEach(postId => {
-          // Fetch post
-          this.$store.dispatch('fetchThread', {id: postId}).then(post => {
-            // Fetch user
-            this.$store.dispatch('fetchUser', {id: post.userId})
+          Object.keys(thread.posts).forEach(postId => {
+            // fetch post
+            this.$store.dispatch('fetchPost', {id: postId})
+              .then(post => {
+                // fetch user
+                this.$store.dispatch('fetchUser', {id: post.userId})
+              })
           })
         })
-      })
     }
   }
 </script>
